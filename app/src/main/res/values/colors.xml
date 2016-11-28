@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolbarBg">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="startButtonBg">#8BC34A</color>
+    <color name="stopButtonBg">#F44336</color>
+    <color name="topNavDrawerBg">#1A598C</color>
+    <color name="navDrawerBg">#123857</color>
+    <color name="orange">#FF6801</color>
+    <!--
+        Activity Stats Colors
+    -->
+    <color name="progressBarBg">#C6C6C6</color>
+    <color name="progress">#1A598C</color>
+
+    <!--
+        Activity Stats Colors
+    -->
+    <color name="divider">#90CBF9</color>
+</resources>

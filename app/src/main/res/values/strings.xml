@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">DriversEd</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--
+    Main Activity Strings
+-->
+    <string name="buttonStartText">START</string>
+    <string name="buttonStopText">STOP</string>
+    <string name="buttonSaveText">SAVE</string>
+    <string name="buttonClearText">CLEAR</string>
+    <string name="mainScreenDateLabel">Date:</string>
+    <string name="mainScreenHoursLabel">Hours:</string>
+    <string name="mainScreenLightLabel">Light Condition:</string>
+    <string name="radioDayLabel">Day</string>
+    <string name="radioNightLabel">Night</string>
+    <string name="mainScreenTypeLabel">Lesson Type:</string>
+    <string name="mainScreenWeatherLabel">Weather Condition:</string>
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClose">Close</string>
+
+    <!--
+        Statistics Activity Strings
+    -->
+    <string name="hoursByDayLabel">Total Hours By Day</string>
+    <string name="hoursByNightLabel">Total Hours by Night</string>
+    <string name="hoursResidentialLabel">Total Hours Residential</string>
+    <string name="hoursCommercialLabel">Total Hours Commercial</string>
+    <string name="hoursHighwayLabel">Total Hours Highway</string>
+    <string name="hoursClearLabel">Total Hours in Clear Weather</string>
+    <string name="hoursRainyLabel">Total Hours in Rainy Weather</string>
+    <string name="hoursSnowLabel">Total Hours in Snowy/Icy Weather</string>
+    <!--
+        Settings Activity Strings
+    -->
+    <string name="totalHoursLabel">Total Hours Req\'d:</string>
+    <string name="dayHoursLabel">Day Hours Req\'d:</string>
+    <string name="nightHoursLabel">Night Hours Req\'d:</string>
+    <string name="residentialHoursLabel">Residential Hours Req\'d:</string>
+    <string name="commercialHoursLabel">Commercial Hours Req\'d:</string>
+    <string name="highwayHoursLabel">Highway Hours Req\'d:</string>
+    <string name="clearHoursLabel">Clear Hours Req\'d:</string>
+    <string name="rainyHoursLabel">Rainy Hours Req\'d:</string>
+    <string name="snowyHoursLabel">Snowy/Ice Hours Req\'d:</string>
+    <!--
+        Navigation Strings
+    -->
+    <string name="navSettingsLabel">Settings</string>
+    <string name="navNewLessonLabel">New Lesson</string>
+    <string name="navStatisticsLabel">Statistics</string>
+    <string name="navDrivingLogsLabel">Driving Logs</string>
+    <!--
+        Driving Log Strings
+    -->
+    <string name="hoursYouDroveLabel">Hours You Drove:</string>
+
+    <!--
+        Arrays
+    -->
+    <string-array name="lessonTypeArray">
+        <item>Residential</item>
+        <item>Commercial</item>
+        <item>Highway</item>
+    </string-array>
+
+    <string-array name="weatherTypeArray">
+        <item>Clear</item>
+        <item>Raining</item>
+        <item>Snow/Ice</item>
+    </string-array>
+
+
+    <string name="title_activity_stats">Statistics</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_statistics">Statistics</string>
+    <string name="title_activity_driving_logs">Driving Logs</string>
+
+    <string name="dialog_set">Save</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="edit_log_title">Edit Log</string>
+</resources>

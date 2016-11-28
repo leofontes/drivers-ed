@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.leofontes.driversed.NewLesson">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16px"
+        android:paddingTop="16px"
+        android:paddingRight="16px"
+        android:paddingBottom="16px"
+
+        android:layout_gravity="center_horizontal|top">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainScreenDateLabel"
+            android:id="@+id/dateLabel"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:layout_toLeftOf="@+id/editDateInput"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editDateInput"
+            android:layout_alignTop="@+id/dateLabel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainScreenHoursLabel"
+            android:id="@+id/hoursLabel"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:layout_below="@+id/editDateInput"
+            android:layout_alignLeft="@+id/dateLabel"
+            android:layout_alignStart="@+id/dateLabel"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/editHoursInput"
+            android:layout_toStartOf="@+id/editHoursInput" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editHoursInput"
+            android:layout_below="@+id/dateLabel"
+            android:layout_alignRight="@+id/editDateInput"
+            android:layout_alignEnd="@+id/editDateInput"
+            android:layout_marginTop="5dp"
+            android:layout_alignBottom="@+id/hoursLabel"
+            android:focusable="false"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainScreenLightLabel"
+            android:id="@+id/lightConditionLabel"
+            android:layout_below="@+id/hoursLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="28dp"
+            android:textSize="24sp"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lightConditionLabel"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_alignRight="@+id/editHoursInput"
+            android:layout_alignEnd="@+id/editHoursInput"
+            android:layout_alignLeft="@+id/hoursLabel"
+            android:layout_alignStart="@+id/hoursLabel"
+            android:layout_marginTop="10dp">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioDayLabel"
+                android:id="@+id/editDayRadioButton"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioNightLabel"
+                android:id="@+id/editNightRadioButton"
+                android:checked="false"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainScreenTypeLabel"
+            android:id="@+id/lessonTypeLabel"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp"
+            android:layout_alignRight="@+id/lightConditionLabel"
+            android:layout_alignEnd="@+id/lightConditionLabel"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editLessonSpinner"
+            android:layout_below="@+id/lessonTypeLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainScreenWeatherLabel"
+            android:id="@+id/weatherLabel"
+            android:layout_below="@+id/editLessonSpinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="24sp"
+            android:layout_toStartOf="@+id/editHoursInput"
+            android:layout_toLeftOf="@+id/editHoursInput"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/editLessonSpinner"
+            android:layout_alignEnd="@+id/editLessonSpinner" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editWeatherSpinner"
+            android:layout_below="@+id/weatherLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+</FrameLayout>

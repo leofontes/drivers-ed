@@ -1,0 +1,238 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.leofontes.driversed.Statistics">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursByDayLabel"
+                android:id="@+id/hoursByDayTextView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hoursByDayProgressBar"
+                android:layout_below="@+id/hoursByDayTextView"
+                android:layout_centerHorizontal="true"
+                android:max="55"
+                android:progress="40"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursByNightLabel"
+                android:id="@+id/hoursByNightTextView"
+                android:textSize="18sp"
+                android:layout_below="@+id/hoursByDayProgressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hoursByNightProgressBar"
+                android:max="10"
+                android:progress="9"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_below="@+id/hoursByNightTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursResidentialLabel"
+                android:id="@+id/residentialHoursTextView"
+                android:textSize="18sp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/hoursByNightProgressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/residentialProgressBar"
+                android:max="4"
+                android:progress="3"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_below="@+id/residentialHoursTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursCommercialLabel"
+                android:id="@+id/commercialHoursTextView"
+                android:textSize="18sp"
+                android:layout_below="@+id/residentialProgressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/commercialProgressBar"
+                android:max="2"
+                android:progress="1"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_below="@+id/commercialHoursTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursHighwayLabel"
+                android:id="@+id/highwayHoursTextView"
+                android:textSize="18sp"
+                android:layout_below="@+id/commercialProgressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/highwayProgressBar"
+                android:max="4"
+                android:progress="4"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_below="@+id/highwayHoursTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursClearLabel"
+                android:id="@+id/clearWeatherTextView"
+                android:textSize="18sp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/highwayProgressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/clearProgressBar"
+                android:max="55"
+                android:progress="43"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_below="@+id/clearWeatherTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursRainyLabel"
+                android:id="@+id/rainyWeatherTextView"
+                android:textSize="18sp"
+                android:layout_below="@+id/clearProgressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rainyProgressBar"
+                android:max="5"
+                android:progress="5"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_below="@+id/rainyWeatherTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hoursSnowLabel"
+                android:id="@+id/snowTextView"
+                android:textSize="18sp"
+                android:layout_below="@+id/rainyProgressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/snowyProgressBar"
+                android:max="5"
+                android:progress="4"
+                android:indeterminate="false"
+                android:progressBackgroundTint="@color/progressBarBg"
+                android:progressTint="@color/progress"
+                android:layout_below="@+id/snowTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/progress_bar_custom"/>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

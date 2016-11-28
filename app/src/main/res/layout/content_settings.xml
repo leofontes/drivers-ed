@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="me.leofontes.driversed.Settings"
+    tools:showIn="@layout/activity_settings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totalHoursLabel"
+        android:id="@+id/drawerCurrTotalLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/totalHoursInput"
+        android:layout_toStartOf="@+id/totalHoursInput"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/totalHoursInput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:text="65" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dayHoursLabel"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:layout_below="@+id/totalHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/dayHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/totalHoursInput"
+        android:layout_toRightOf="@+id/drawerCurrTotalLabel"
+        android:layout_toEndOf="@+id/drawerCurrTotalLabel"
+        android:layout_marginTop="5dp"
+        android:text="55" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nightHoursLabel"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:layout_below="@+id/dayHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/nightHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/dayHoursInput"
+        android:layout_toRightOf="@+id/drawerCurrTotalLabel"
+        android:layout_toEndOf="@+id/drawerCurrTotalLabel"
+        android:layout_marginTop="5dp"
+        android:text="10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/residentialHoursLabel"
+        android:id="@+id/textView4"
+        android:textSize="20sp"
+        android:layout_below="@+id/nightHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/resHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/nightHoursInput"
+        android:layout_alignRight="@+id/nightHoursInput"
+        android:layout_alignEnd="@+id/nightHoursInput"
+        android:layout_marginTop="5dp"
+        android:text="4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commercialHoursLabel"
+        android:id="@+id/textView5"
+        android:textSize="20sp"
+        android:layout_below="@+id/resHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/comHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/resHoursInput"
+        android:layout_alignLeft="@+id/resHoursInput"
+        android:layout_alignStart="@+id/resHoursInput"
+        android:layout_marginTop="5dp"
+        android:text="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highwayHoursLabel"
+        android:id="@+id/textView6"
+        android:textSize="20sp"
+        android:layout_below="@+id/comHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/hwHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/comHoursInput"
+        android:layout_alignLeft="@+id/comHoursInput"
+        android:layout_alignStart="@+id/comHoursInput"
+        android:layout_marginTop="5dp"
+        android:text="4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clearHoursLabel"
+        android:id="@+id/textView7"
+        android:textSize="20sp"
+        android:layout_below="@+id/hwHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/clearHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/hwHoursInput"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:text="55" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rainyHoursLabel"
+        android:id="@+id/textView8"
+        android:textSize="20sp"
+        android:layout_below="@+id/clearHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/rainyHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/clearHoursInput"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:text="5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/snowyHoursLabel"
+        android:id="@+id/textView9"
+        android:textSize="20sp"
+        android:layout_below="@+id/rainyHoursInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/snowyHoursInput"
+        android:textAlignment="center"
+        android:layout_below="@+id/rainyHoursInput"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:text="5" />
+
+</RelativeLayout>
